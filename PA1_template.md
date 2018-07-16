@@ -240,7 +240,7 @@ diff <- round((sum(df_new$steps, na.rm=TRUE) - sum(df$steps, na.rm=TRUE)) / sum(
 ```
 
 
-**Observation :** There were 8 days of data that were missing intitially. Post imputing we could see the data for those 8 days and an increase in total steps by **13.11**
+**Observation :** There were 8 days of data that were missing intitially. Post imputing we could see the data for those 8 days and an increase in total steps by **13.11** %.
 
 
 ### 7.Histogram for Imputed data
@@ -258,26 +258,6 @@ hist(p7$steps, main="Histogram of Steps Per Day", xlab = "Total number of Steps 
 
 ```r
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(lattice)
 
 df_new$daytype <- ifelse( weekdays(df_new$date) %in% c("Saturday", "Sunday") , "Weekend", "Weekday")

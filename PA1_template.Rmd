@@ -98,7 +98,7 @@ diff <- round((sum(df_new$steps, na.rm=TRUE) - sum(df$steps, na.rm=TRUE)) / sum(
 ```
 
 
-**Observation :** There were 8 days of data that were missing intitially. Post imputing we could see the data for those 8 days and an increase in total steps by **`r diff`**
+**Observation :** There were 8 days of data that were missing intitially. Post imputing we could see the data for those 8 days and an increase in total steps by **`r diff`** %.
 
 
 ### 7.Histogram for Imputed data
