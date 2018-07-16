@@ -2,7 +2,7 @@
 title: "Reproducible Research Peer Assignment 1"
 author: "thenuv"
 date: "15 July 2018"
-output: html_document 
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
